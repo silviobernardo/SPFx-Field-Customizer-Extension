@@ -1,0 +1,10 @@
+.fieldCustomizer {
+  .cell {
+    display: inline-block;
+  }
+  .full {
+    background-color: "[theme:themePrimary, default:#0078d4]";
+    color: "[theme:white, default:#ffffff]";
+    width: 150px;
+  }
+}
