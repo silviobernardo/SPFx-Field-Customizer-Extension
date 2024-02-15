@@ -20,7 +20,7 @@ This sample will customize a field column style
 1. Open repository folder on Visual Studio Code
 2. Create a new SharePoint List and add a new column called "Age", which data type is "Number"
 3. Add some records to the list
-4. Go to "config/serve.json" file and uptate "pageUrl" value to your SharePoint List URL 
+4. Go to "config/serve.json" file and update "pageUrl" value to your SharePoint List URL 
 5. Open a terminal
 6. Run "npm install"
 7. Run "gulp trust-dev-cert"
