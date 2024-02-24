@@ -2,6 +2,9 @@
 
 This sample will customize a field column style
 
+Please, refere to this documentation for more details
+https://pnp.github.io/sp-dev-fx-controls-react/controls/fields/FieldRendererHelper/
+
 
 ## Used SharePoint Framework Version
 
