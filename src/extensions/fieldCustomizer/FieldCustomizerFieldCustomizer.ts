@@ -9,6 +9,7 @@ import {
 
 import * as strings from 'FieldCustomizerFieldCustomizerStrings';
 import FieldCustomizer, { IFieldCustomizerProps } from './components/FieldCustomizer';
+import { IContext } from '@pnp/spfx-controls-react/lib/common/Interfaces';
 
 /**
  * If your field customizer uses the ClientSideComponentProperties JSON input,
@@ -16,8 +17,7 @@ import FieldCustomizer, { IFieldCustomizerProps } from './components/FieldCustom
  * You can define an interface to describe it.
  */
 export interface IFieldCustomizerFieldCustomizerProperties {
-  // This is an example; replace with your own property
-  sampleText?: string;
+  // This properties are coming from 'config/server.json' properties keys object
 }
 
 const LOG_SOURCE: string = 'FieldCustomizerFieldCustomizer';
@@ -36,12 +36,20 @@ export default class FieldCustomizerFieldCustomizer
 
   public onRenderCell(event: IFieldCustomizerCellEventParameters): void {
     // Use this method to perform your custom cell rendering.
-    const value: number = event.fieldValue;
-    //const text: string = `${this.properties.sampleText}: ${event.fieldValue}`;
+    //const age: number = event.fieldValue;
 
     const fieldCustomizer: React.ReactElement<{}> =
-      React.createElement(FieldCustomizer, { value } as IFieldCustomizerProps);
-
+      React.createElement(FieldCustomizer, {
+        context: this.context as IContext,
+        fieldValue: event.fieldValue,
+        listItemAccessor: event.listItem,
+        cssProps: {
+          backgroundColor: "#0078d4",
+          color: "#fff",
+          width: `${parseInt(event.fieldValue) + 6}px`, // Calculates the width field taking into account the padding
+          padding: "0px 3px"
+        }
+      } as IFieldCustomizerProps);
     ReactDOM.render(fieldCustomizer, event.domElement);
   }
 

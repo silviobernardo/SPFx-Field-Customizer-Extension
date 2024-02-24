@@ -8,20 +8,7 @@
       "fieldCustomizers": {
         "Age": {
           "id": "e664b40a-acbf-42b2-8178-e94d85f090fa",
-          "properties": {
-            "sampleText": "Value"
-          }
-        }
-      }
-    },
-    "fieldCustomizer": {
-      "pageUrl": "https://findmoreconsult.sharepoint.com/sites/silviobernardo/Lists/TestList/AllItems.aspx",
-      "fieldCustomizers": {
-        "Age": {
-          "id": "e664b40a-acbf-42b2-8178-e94d85f090fa",
-          "properties": {
-            "sampleText": "Value"
-          }
+          "properties": {}
         }
       }
     }
