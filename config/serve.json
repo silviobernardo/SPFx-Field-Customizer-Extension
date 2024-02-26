@@ -8,9 +8,11 @@
       "fieldCustomizers": {
         "Age": {
           "id": "e664b40a-acbf-42b2-8178-e94d85f090fa",
-          "properties": {
-            "sampleText": "Value"
-          }
+          "properties": {}
+        },
+        "Rating": {
+          "id": "a123b40a-acbf-42b2-8178-e94d85f090ff",
+          "properties":{}
         }
       }
     },
@@ -19,9 +21,11 @@
       "fieldCustomizers": {
         "Age": {
           "id": "e664b40a-acbf-42b2-8178-e94d85f090fa",
-          "properties": {
-            "sampleText": "Value"
-          }
+          "properties": {}
+        },
+        "Rating": {
+          "id": "a123b40a-acbf-42b2-8178-e94d85f090ff",
+          "properties":{}
         }
       }
     }

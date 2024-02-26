@@ -2,17 +2,21 @@
   "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
   "version": "2.0",
   "bundles": {
-    "field-customizer-field-customizer": {
+    "field-customizers": {
       "components": [
         {
-          "entrypoint": "./lib/extensions/fieldCustomizer/FieldCustomizerFieldCustomizer.js",
-          "manifest": "./src/extensions/fieldCustomizer/FieldCustomizerFieldCustomizer.manifest.json"
+          "entrypoint": "./lib/extensions/fieldCustomizer/AgeFieldCustomizer.js",
+          "manifest": "./src/extensions/fieldCustomizer/AgeFieldCustomizer.manifest.json"
+        },
+        {
+          "entrypoint": "./lib/extensions/fieldCustomizer/RatingFieldCustomizer.js",
+          "manifest": "./src/extensions/fieldCustomizer/RatingFieldCustomizer.manifest.json"
         }
       ]
     }
   },
   "externals": {},
   "localizedResources": {
-    "FieldCustomizerFieldCustomizerStrings": "lib/extensions/fieldCustomizer/loc/{locale}.js"
+    "FieldCustomizerStrings": "lib/extensions/fieldCustomizer/loc/{locale}.js"
   }
 }

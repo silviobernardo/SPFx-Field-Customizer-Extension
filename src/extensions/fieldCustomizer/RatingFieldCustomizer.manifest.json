@@ -1,8 +1,8 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-extension-manifest.schema.json",
 
-  "id": "e664b40a-acbf-42b2-8178-e94d85f090fa",
-  "alias": "FieldCustomizerFieldCustomizer",
+  "id": "a123b40a-acbf-42b2-8178-e94d85f090ff",
+  "alias": "RatingFieldCustomizer",
   "componentType": "Extension",
   "extensionType": "FieldCustomizer",
 

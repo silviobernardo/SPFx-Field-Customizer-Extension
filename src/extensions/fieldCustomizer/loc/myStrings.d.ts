@@ -1,8 +1,8 @@
-declare interface IFieldCustomizerFieldCustomizerStrings {
+declare interface IFieldCustomizerStrings {
   Title: string;
 }
 
-declare module 'FieldCustomizerFieldCustomizerStrings' {
-  const strings: IFieldCustomizerFieldCustomizerStrings;
+declare module 'FieldCustomizerStrings' {
+  const strings: IFieldCustomizerStrings;
   export = strings;
 }

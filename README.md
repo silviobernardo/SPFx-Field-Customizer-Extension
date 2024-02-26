@@ -1,6 +1,6 @@
 ## Sample goal
 
-This sample will customize a field column style
+This sample will customize SharePoint List View fields style
 
 
 ## Used SharePoint Framework Version
@@ -18,7 +18,7 @@ This sample will customize a field column style
 ## HOW TO RUN
 
 1. Open repository folder on Visual Studio Code
-2. Create a new SharePoint List and add a new column called "Age", which data type is "Number"
+2. Create a new SharePoint List and add new columns called "Age" (Number, with no decimal places) and "Rating" (Number, with no decimal places, min value 0, max value 5)
 3. Add some records to the list
 4. Go to "config/serve.json" file and update "pageUrl" value to your SharePoint List URL 
 5. Open a terminal
